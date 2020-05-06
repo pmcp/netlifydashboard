@@ -25,6 +25,7 @@
         <header class="flex justify-between items-center mb-2">
           <a
             :href="site.url"
+            target="_blank" 
             class="text-black dark:text-grey-light no-underline uppercase duration-200 transition-colors dark:hover:text-teal hover:text-teal-dark"
           >
             <h3 class="font-bold text-lg m-0">{{ site.name }}</h3>
@@ -32,13 +33,14 @@
           <a
             :href="site.repo"
             :title="`${site.name} github`"
+            target="_blank" 
             class="text-grey-dark hover:text-black dark:hover:text-grey-light duration-200 transition-colors"
           >
             <github class="h-6 w-6" />
           </a>
         </header>
         <footer class="flex justify-between items-end h-8">
-          <a :href="`${site.adminUrl}/deploys`" class="badge">
+          <a :href="`${site.adminUrl}/deploys`" target="_blank" class="badge">
             <img
               :src="site.badgeUrl"
               :alt="`${site.name} deploy status.`"
