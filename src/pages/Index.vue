@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="flex items-center">
+    <!-- <div class="flex items-center">
       <h1
         @click="countIt"
         class="text-3xl font-bold select-none m-0 cursor-default"
@@ -14,13 +14,13 @@
       >
         Login
       </button>
-    </div>
-    <p class="text-teal-dark dark:text-teal">{{ count }} Websites</p>
+    </div> -->
+    <!-- <p class="text-teal-dark dark:text-teal">{{ count }} Websites</p> -->
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 py-12">
       <div
         v-for="site in sites"
         :key="site.id"
-        class="bg-white dark:bg-grey-darker rounded-md p-4 transition-all ease-out duration-300 hover:shadow-xl dark:hover:border-teal border-transparent border"
+        class="opacity-75 bg-white dark:bg-grey-darker rounded-md p-4 transition-all ease-out duration-300 hover:shadow-xl dark:hover:border-teal border-transparent border"
       >
         <header class="flex justify-between items-center mb-2">
           <a
@@ -179,7 +179,8 @@ export default {
 
 <style lang="scss">
 button {
-  background: theme('colors.teal-dark');
+  // background: theme('colors.teal-dark');
+  background: transparent;
   border: none;
   color: theme('colors.white');
   font-size: 0.75rem;

@@ -1,12 +1,13 @@
 <template>
-  <div class="layout my-0 mx-auto p-6 max-w-4xl w-full">
+  <div class="layout my-0 mx-auto max-w-4xl w-full">
     <slot />
   </div>
 </template>
 
 <style>
 body {
-  background: theme('colors.grey-light');
+  /* background: theme('colors.grey-light'); */
+  background: transparent !important;
   color: theme('colors.black');
   font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, sans-serif;
